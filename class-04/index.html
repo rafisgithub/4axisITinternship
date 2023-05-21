@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<script>
+    // $(document).ready(function(){
+    //      $("button").click(function(){
+    //         $("p").hide();
+    //     });
+    // });
+
+
+    // $(document).ready(function(){
+    //     $("#show").click(function(){
+    //         $("p").show();
+    //     })
+    // })
+
+    // $(document).ready(function(){
+    //     $("p").click(function(){
+    //         $(this).hide();
+    //     })
+    // })
+
+    $(document).ready(function(){
+        $("#12").click(function(){
+       
+            $("p").toggle();
+            var b_text=$('#12').html();
+            if(b_text=="hide"){
+                $('#12').html('show');
+            }else{
+                $('#12').html('hide');
+                
+            }
+        })
+    })
+
+</script>
+
+
+<h2>This is a heading</h2>
+<p>This is a paragraph</p>
+<p>This is another paragraph</p>
+
+<!-- <button>Hide</button> -->
+<button id="12">hide</button>
+</body>
+</html>
