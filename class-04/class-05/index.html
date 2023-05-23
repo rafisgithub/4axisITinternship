@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+
+  
+  function test(){
+
+        // alert('test');
+    
+        var name=$('#name').val();
+        
+         var phone = $('#phone').val();
+        
+        var email = $('#email').val();
+        var passport = $('#passport').val();
+
+        var password = $('#pwd').val();
+        // alert(password);
+        var confirm_pwd = $('#confirm_pwd').val();
+
+	 var pwd=$('#pwd').val();
+         var confirm_pwd = $('#confirm_pwd').val();
+		if(name==''){
+            
+			$('#name_error').html('Please fill name field');
+            
+		}else{
+           
+			$('#name_error').html('');
+
+		}
+
+    
+
+        if(phone == ''){
+            $('#phone_error').html('please fill up the contact field');
+        }else{
+            $('#phone_error').html('');
+        }
+
+        if(email == ''){
+            $('#mail_error').html('pleae fill up email field');
+        }else{
+            $('#mail_error').html('');
+        }
+
+        if(passport == ''){
+            $('#passport_error').html('plase fil up the passport field')
+        }else {
+            $('#passport_error').html('');
+        }
+        if(password == '' ){
+            $('#pwd_error').html('fill up the password field');
+        }
+        else {
+            if(password.length<6 ){
+                $('#pwd_error').html('pass at least 6 character');
+            }else{
+                $('#pwd_error').html('');
+            }
+        }
+
+        if(confirm_pwd != password){
+            $('#confirm_pwd_error').html('password does not match');
+            
+        }else{
+            $('#confim_pwd').html('');
+
+        }
+
+        if(name == ''){
+            $('#name').focus();
+        }else if(phone == ''){
+            $('#phone').focus();
+        }else if(email == ''){
+            $('#email').focus();
+        }else if(passport == ''){
+            $('#passport').focus();
+        }else if(password == ''){
+            $('#pwd').focus();
+        }else{
+            $('#confirm_pwd').focus();
+        }
+	
+  }
+
+  
+     
+  </script>
+</head>
+<body>
+
+<div class="container">
+    <h2 class="text-center" style="color: blue;">Form Validation</h2>
+  
+  <form action="">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" >
+	  <span id="name_error" style="color:red"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="Phone">Phone NO:</label>
+        <input type="number" class="form-control" id="phone" placeholder="Enter your contact number">
+        <span id="phone_error" style="color:red"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+        <span id="mail_error" style="color:red"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="passport" >Passport:</label>
+        <input type="text" class="form-control" id="passport" placeholder="Enter your passport number">
+        <span id="passport_error" style="color:red"></span>
+
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+	  <span id="pwd_error" style="color:red"></span>
+    </div>
+    
+    <div class="form-group">
+        <label for="confirm_pwd">Confirm Password:</label>
+        <input type="password" class="form-control" id="confirm_pwd" placeholder="Enter confirm password">
+        <span id="confirm_pwd_error" style="color:red"></span>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="button" class="btn btn-default" onclick="test()">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>

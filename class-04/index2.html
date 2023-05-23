@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+    $("input").focus(function(){
+        $(this).css("background-color", "blue")
+    });
+
+    $("input").blur(function(){
+        $(this).css("background-color", "black")
+    });
+});
+
+// $(document).ready(function(){
+//     $("#123").focus(function(){
+//         $("#123").css("background-color",'Red');
+//     });
+
+//     $("#e12").blur(function(){
+//         $("#e12").css("background-color",'Red')
+//     });
+// });
+
+</script>
+</head>
+<body>
+
+<label for="123">Name:</label>
+<input type="text" name="fullname" id="123"> <br> <br>
+
+<label for="e12">Email:</label>
+<input type="text" name="email" id="e12">
+
+</body>
+</html>
