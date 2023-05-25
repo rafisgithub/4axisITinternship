@@ -1,0 +1,31 @@
+.dropdown {
+    margin-bottom: 10px;
+  }
+  
+  .dropdown select {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .dropdown select:focus {
+    outline: none;
+    border-color: #aaa;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .DropDown {
+    background-color: rebeccapurple;
+    position: relative;
+    width: auto;
+  }
+
+  .DropDown select {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    border-radius: 10%;
+  }
+  
