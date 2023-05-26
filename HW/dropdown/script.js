@@ -1,8 +1,8 @@
 $(document).ready(function() {
     // Division data for Bangladesh
     var divisions = {
-      "Dhaka": ["Dhaka", "Gazipur", "Narayanganj","Kishorgang","Madripur","Munshiganj"],
-      "Chittagong": ["Chittagong", "Cox's Bazar", "Comilla"],
+      "Dhaka": ["Dhaka", "Gazipur", "Narayanganj","Kishorgang","Madripur","Munshiganj","Kushtia",],
+      "Chittagong": ["Chittagong", "Cox's Bazar", "Comilla","Rangamati","Noakhali","Feni","Laksmipur","Brahmanbaria","Chandpur"],
       "Rajshahi": ["Rajshahi", "Bogra", "Rangpur"],
       "Khulna": ["Khulna", "Jessore", "Satkhira"],
       "Barisal": ["Barisal", "Patuakhali", "Pirojpur"],
